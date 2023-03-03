@@ -45,7 +45,7 @@ rate_data <- county_data %>%
   mutate(rate_last = totalcases_last / pop * POP_DENOM)
 ```
 
-### Minnesota
+### Wisconsin
 
 Here is a plot of COVID-19 rates since Jan. 1, 2023 in the 10 most populous Minnesota counties:
 
@@ -58,7 +58,7 @@ top10_pop <- pops %>% filter(state == "Wisconsin") %>%
 
 ## Make the plot
 rate_data %>%
-    filter(state == "Minnesota", 
+    filter(state == "Wisconsin", 
          county %in% top10_pop$county) %>%
   ggplot(aes(x = date, y = rate_last, color = county)) +
   geom_line(linewidth = 2) +
