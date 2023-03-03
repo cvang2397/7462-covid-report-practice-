@@ -1,7 +1,7 @@
-Minnesota COVID Report
+Wisconsin COVID Report
 ================
 
-Report last run: 2023-03-03 21:37:20
+Report last run: 2023-03-03 21:44:59
 
 ## Introduction
 
@@ -42,7 +42,7 @@ rate_data <- county_data %>%
 ### Wisconsin
 
 Here is a plot of COVID-19 rates since Jan. 1, 2023 in the 10 most
-populous Minnesota counties:
+populous Wisconsin counties:
 
 ``` r
 ## Identify the top 10 most populous counties
@@ -61,7 +61,7 @@ rate_data %>%
   ylab("7-day COVID-19 case total per 100,000 population") +
   scale_color_discrete(name = "") +
   theme_minimal() +
-  ggtitle("COVID-19 rates for the ten most populous Minnesota counties", 
+  ggtitle("COVID-19 rates for the ten most populous Wisconsin counties", 
           subtitle = paste("Latest data:", max(rate_data$date)))
 ```
 
